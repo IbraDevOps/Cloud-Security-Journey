@@ -1,8 +1,10 @@
-# CySentra AWS Employee Security Lab
+# AWS Employee Security Lab
 
-A project-driven AWS security engineering lab focused on designing, building, securing, testing, and documenting a realistic employee management platform.
+> A production-inspired AWS Security Engineering project documenting the design, deployment, hardening, assessment, monitoring, and remediation of a cloud-native employee management platform.
 
-The system will support the following business roles:
+---
+
+## Business Roles
 
 - CEO
 - Human Resources
@@ -11,22 +13,18 @@ The system will support the following business roles:
 - Security Team
 - Employees
 
-The project begins with software and security architecture before introducing AWS infrastructure.
-
 ---
 
-## Project Objectives
+## Skills Demonstrated
 
-This project is designed to develop practical skills in:
-
-- AWS architecture
-- Cloud security
-- Identity and access management
-- Secure system design
-- Threat modelling
-- Offensive cloud security
-- Detection engineering
-- Security assessment and reporting
+- AWS Architecture
+- Cloud Security
+- IAM
+- Infrastructure as Code
+- Threat Modeling
+- Detection Engineering
+- Incident Response
+- Offensive Cloud Security
 
 ---
 
@@ -34,11 +32,13 @@ This project is designed to develop practical skills in:
 
 ```mermaid
 flowchart LR
-    A[System Design] --> B[Application Design]
-    B --> C[AWS Architecture]
-    C --> D[Infrastructure Build]
-    D --> E[Security Hardening]
-    E --> F[Offensive Assessment]
-    F --> G[Detection and Monitoring]
-    G --> H[Remediation]
-    H --> I[Final Security Report]
+    A[Requirements] --> B[System Design]
+    B --> C[Threat Modeling]
+    C --> D[AWS Architecture]
+    D --> E[Infrastructure Deployment]
+    E --> F[Security Hardening]
+    F --> G[Offensive Security Assessment]
+    G --> H[Logging & Detection]
+    H --> I[Incident Response]
+    I --> J[Remediation]
+    J --> K[Final Security Report]
