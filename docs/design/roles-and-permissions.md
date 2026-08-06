@@ -1,43 +1,150 @@
+# Roles & Permissions
+
+Before choosing AWS services, we first define who will use the system.
+
+Every user has different responsibilities, which later translate into AWS IAM policies and application authorization.
 
 ---
 
-# 4. Initial role model
+## 👨‍💼 CEO
 
-#Put this inside `docs/design/roles-and-permissions.md`:
+The CEO has executive-level visibility.
 
-```markdown
-# Roles and Permissions
+Responsibilities
 
-## Initial Authorization Matrix
+- View company dashboard
+- View reports
+- View employee statistics
+- View financial summaries
 
-| Action | CEO | HR | Finance | Developer | Security | Employee |
-|---|---:|---:|---:|---:|---:|---:|
-| View own profile | Yes | Yes | Yes | Yes | Yes | Yes |
-| Edit own profile | Limited | Limited | Limited | Limited | Limited | Limited |
-| Create employee | No | Yes | No | No | No | No |
-| Update employee record | No | Yes | No | No | No | No |
-| View employee documents | Limited | Yes | No | No | Investigative | Own only |
-| Upload employee documents | No | Yes | No | No | No | Limited |
-| View payroll | Reports only | No | Yes | No | Investigative | Own only |
-| Modify payroll | No | No | Yes | No | No | No |
-| Assign business roles | Approval | Yes | No | No | Review | No |
-| Deploy application | No | No | No | Yes | No | No |
-| Read application secrets | No | No | No | Restricted | Restricted | No |
-| View security logs | Summary | No | No | Limited | Yes | No |
-| Investigate incidents | No | No | No | Support | Yes | No |
-| Disable accounts | Approval | HR accounts | No | No | Emergency | No |
+The CEO cannot:
+
+- Modify payroll
+- Deploy applications
+- Access AWS infrastructure
 
 ---
 
-## Separation of Duties
+## 👩‍💼 Human Resources (HR)
 
-The design separates sensitive responsibilities:
+HR manages employee information.
 
-- HR manages employee records
-- Finance manages payroll
-- Developers manage application code
-- Security monitors and investigates
-- CEO receives reports and approvals
-- Employees access only their own information
+Responsibilities
 
-No single normal business role should control employee creation, payroll, application deployment, and security monitoring.
+- Create employees
+- Edit employee profiles
+- Upload contracts
+- Upload identification documents
+- Disable employee accounts
+
+HR cannot:
+
+- View AWS resources
+- Access application secrets
+- Deploy code
+
+---
+
+## 💰 Finance
+
+Finance manages payroll.
+
+Responsibilities
+
+- Process salaries
+- View payroll
+- Export payment reports
+
+Finance cannot:
+
+- Edit employee contracts
+- Manage infrastructure
+- Read application secrets
+
+---
+
+## 👨‍💻 Developer
+
+Developers build the application.
+
+Responsibilities
+
+- Deploy new versions
+- Debug the application
+- View application logs
+
+Developers cannot:
+
+- View payroll
+- Modify employee records
+- Read production secrets
+
+---
+
+## 🛡️ Security Team
+
+The security team protects the platform.
+
+Responsibilities
+
+- Review logs
+- Investigate incidents
+- Monitor suspicious activity
+- Review IAM permissions
+
+Security cannot:
+
+- Modify payroll
+- Change employee contracts
+
+---
+
+## 👤 Employee
+
+Normal employees have limited access.
+
+Responsibilities
+
+- View their profile
+- Download their own documents
+- Update limited personal information
+
+Employees cannot:
+
+- View other employees
+- View payroll data
+- Access administration features
+
+
+```mermaid
+graph TD
+
+CEO --> EMS[Employee Management System]
+
+HR --> EMS
+
+Finance --> EMS
+
+Developer --> EMS
+
+Security --> EMS
+
+Employee --> EMS
+```
+
+
+```mermaid
+graph LR
+
+Employee --> Profile
+
+HR --> EmployeeRecords
+
+Finance --> Payroll
+
+Developer --> Application
+
+Security --> Logs
+
+CEO --> Dashboard
+```
