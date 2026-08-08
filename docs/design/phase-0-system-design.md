@@ -25,51 +25,33 @@ The initial phase is technology-independent. AWS services will only be selected 
 
 
 ## 3. Non-Functional Requirements
-Availability
+Availability:99.9%
 
-99.9%
 
----------
+Authentication:Every request must require authentication.
 
-Authentication
 
-Every request must require authentication.
+Authorization:Least privilege.
 
----------
 
-Authorization
 
-Least privilege.
+Confidentiality:Employee data encrypted.
 
----------
 
-Confidentiality
 
-Employee data encrypted.
+Scalability:Support 100 employees.
 
----------
 
-Scalability
 
-Support 1000 employees.
+Auditability:Every privileged action logged.
 
----------
 
-Auditability
 
-Every privileged action logged.
+Backups:Daily.
 
----------
 
-Backups
 
-Daily.
-
----------
-
-Recovery
-
-Database recoverable.
+Recovery:Database recoverable.
 
 ## Assumptions
 The application is internet-facing.
