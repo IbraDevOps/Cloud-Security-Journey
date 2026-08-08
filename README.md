@@ -28,6 +28,27 @@
 
 ---
 
+Phase 0 — Business & Security Requirements
+        ↓
+Phase 1 — Application Architecture
+        ↓
+Phase 2 — Threat Modeling
+        ↓
+Phase 3 — AWS Architecture
+        ↓
+Phase 4 — Infrastructure Deployment
+        ↓
+Phase 5 — IAM & Security Hardening
+        ↓
+Phase 6 — Logging & Detection
+        ↓
+Phase 7 — Offensive Security Assessment
+        ↓
+Phase 8 — Incident Response & Remediation
+        ↓
+Phase 9 — Final Security Report
+
+
 ## Project Lifecycle
 
 ```mermaid
