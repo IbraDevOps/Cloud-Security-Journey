@@ -118,6 +118,7 @@ Employees cannot:
 
 ```mermaid
 graph TD
+System Context
 
 CEO --> EMS[Employee Management System]
 
@@ -135,7 +136,7 @@ Employee --> EMS
 
 ```mermaid
 graph LR
-
+Business Responsibilities
 Employee --> Profile
 
 HR --> EmployeeRecords
