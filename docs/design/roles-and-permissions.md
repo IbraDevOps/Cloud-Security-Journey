@@ -115,10 +115,12 @@ Employees cannot:
 - View payroll data
 - Access administration features
 
+  
+System Context
 
 ```mermaid
 graph TD
-System Context
+
 
 CEO --> EMS[Employee Management System]
 
