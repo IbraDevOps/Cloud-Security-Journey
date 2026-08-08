@@ -8,6 +8,8 @@ The initial phase is technology-independent. AWS services will only be selected 
 
 ---
 
+
+
 ## 2. System Users
 
 | Role | Main Responsibility |
@@ -20,6 +22,68 @@ The initial phase is technology-independent. AWS services will only be selected 
 | Employee | Access to personal profile and documents |
 
 ---
+
+
+## 3. Non-Functional Requirements
+Availability
+
+99.9%
+
+---------
+
+Authentication
+
+Every request must require authentication.
+
+---------
+
+Authorization
+
+Least privilege.
+
+---------
+
+Confidentiality
+
+Employee data encrypted.
+
+---------
+
+Scalability
+
+Support 1000 employees.
+
+---------
+
+Auditability
+
+Every privileged action logged.
+
+---------
+
+Backups
+
+Daily.
+
+---------
+
+Recovery
+
+Database recoverable.
+
+## Assumptions
+The application is internet-facing.
+
+Employees work remotely.
+
+Authentication is centralized.
+
+Payroll data is confidential.
+
+Documents must be encrypted.
+
+Every employee has one role.
+
 
 ## 3. Main Use Cases
 
