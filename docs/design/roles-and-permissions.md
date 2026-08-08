@@ -134,11 +134,12 @@ Security --> EMS
 
 Employee --> EMS
 ```
+                                      ## Business Responsibilities
 
 
 ```mermaid
 graph LR
-Business Responsibilities
+
 Employee --> Profile
 
 HR --> EmployeeRecords
