@@ -42,3 +42,63 @@ flowchart TD
     SEC --> K[Investigate Suspicious Activity]
 
     DEV[Developer] --> L[Deploy and Maintain Application]
+
+## 3. Non-Functional Requirements
+Availability
+
+99.9%
+
+---------
+
+Authentication
+
+Every request must require authentication.
+
+---------
+
+Authorization
+
+Least privilege.
+
+---------
+
+Confidentiality
+
+Employee data encrypted.
+
+---------
+
+Scalability
+
+Support 1000 employees.
+
+---------
+
+Auditability
+
+Every privileged action logged.
+
+---------
+
+Backups
+
+Daily.
+
+---------
+
+Recovery
+
+Database recoverable.
+
+## Assumptions
+The application is internet-facing.
+
+Employees work remotely.
+
+Authentication is centralized.
+
+Payroll data is confidential.
+
+Documents must be encrypted.
+
+Every employee has one role.
