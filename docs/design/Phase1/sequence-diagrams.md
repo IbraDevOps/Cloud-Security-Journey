@@ -59,6 +59,16 @@ sequenceDiagram
 
 ---
 
+sequenceDiagram
+    participant EMP as Employee
+    participant API as Backend API
+    participant AUTH as Authorization
+
+    EMP->>API: GET /payroll/employee-200
+    API->>AUTH: Check role + ownership
+    AUTH-->>API: Denied
+    API-->>EMP: 403 Forbidden
+
 # Finance Updates Payroll
 
 ```mermaid
