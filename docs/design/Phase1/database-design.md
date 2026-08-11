@@ -99,6 +99,11 @@ Example fields:
 - document_type
 - storage_reference
 - uploaded_at
+- uploaded_by
+-classification
+-content_type
+-checksum
+
 
 ---
 
