@@ -1,4 +1,4 @@
-# Phase 1 — Application Architecture
+# Phase 1:Application Architecture
 
 ## Objective
 
