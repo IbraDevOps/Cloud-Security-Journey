@@ -1,4 +1,4 @@
-# Phase 0 — System Design
+# Phase 0:System Design
 
 ## 1. System Purpose
 
