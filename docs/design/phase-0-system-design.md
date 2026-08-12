@@ -1,4 +1,4 @@
-# Phase 0 — System Design
+# Phase 0:System Design
 
 ## 1. System Purpose
 
@@ -7,6 +7,8 @@ The Employee Management System allows CySentra to manage employee identities, em
 The initial phase is technology-independent. AWS services will only be selected after the business and security requirements are understood.
 
 ---
+
+
 
 ## 2. System Users
 
@@ -20,6 +22,50 @@ The initial phase is technology-independent. AWS services will only be selected 
 | Employee | Access to personal profile and documents |
 
 ---
+
+
+## 3. Non-Functional Requirements
+Availability:99.9%
+
+
+Authentication:Every request must require authentication.
+
+
+Authorization:Least privilege.
+
+
+
+Confidentiality:Employee data encrypted.
+
+
+
+Scalability:Support 100 employees.
+
+
+
+Auditability:Every privileged action logged.
+
+
+
+Backups:Daily.
+
+
+
+Recovery:Database recoverable.
+
+## Assumptions
+The application is internet-facing.
+
+Employees work remotely.
+
+Authentication is centralized.
+
+Payroll data is confidential.
+
+Documents must be encrypted.
+
+Every employee has one role.
+
 
 ## 3. Main Use Cases
 
@@ -42,3 +88,4 @@ flowchart TD
     SEC --> K[Investigate Suspicious Activity]
 
     DEV[Developer] --> L[Deploy and Maintain Application]
+
