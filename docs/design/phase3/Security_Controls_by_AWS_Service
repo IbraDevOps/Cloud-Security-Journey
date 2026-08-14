@@ -1,0 +1,18 @@
+## Security Controls by AWS Service
+
+| Control | AWS Service | Implementation |
+|---------|-------------|----------------|
+| **Encryption at Rest** | KMS + RDS/S3 | AWS-managed KMS key |
+| **Encryption in Transit** | TLS | HTTPS everywhere |
+| **Authentication** | Cognito | JWT + MFA |
+| **Authorization** | IAM + Cognito Groups | IAM roles + Cognito claims |
+| **Rate Limiting** | WAF | Rate-based rules |
+| **SQL Injection Protection** | WAF + Parameterized Queries | WAF + Prisma/ORM |
+| **XSS Protection** | WAF + CSP | WAF + Helmet.js |
+| **Secrets Rotation** | Secrets Manager | Automatic rotation |
+| **Audit Logging** | CloudTrail + CloudWatch | All API calls logged |
+| **Threat Detection** | GuardDuty | Intelligent threat detection |
+| **Backup** | RDS Snapshots + S3 Lifecycle | Automated backups |
+| **DDoS Protection** | Shield Standard + WAF | Always-on DDoS |
+| **Vulnerability Scanning** | Inspector | EC2/container scanning |
+| **Network Isolation** | VPC + Private Subnets | No public internet access |
