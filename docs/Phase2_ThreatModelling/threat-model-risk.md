@@ -1,4 +1,4 @@
-# Risk Scoring (DREAD)
+# Risk Scoring usingDREAD
 
 | Factor | Score | Description |
 |--------|-------|-------------|
