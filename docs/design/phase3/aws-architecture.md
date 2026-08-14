@@ -1,6 +1,4 @@
-## You're right — let's clean this up and make it professional.
 
-Here's **exactly** what to put in `Phase3/aws-architecture.md` — clean, focused, and professional.
 
 ---
 
