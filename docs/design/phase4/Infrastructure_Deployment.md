@@ -1,4 +1,4 @@
-# Phase 4 — AWS Infrastructure Deployment
+# Phase 4:AWS Infrastructure Deployment
 
 ## Objective
 
