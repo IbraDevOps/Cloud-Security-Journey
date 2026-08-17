@@ -1,4 +1,4 @@
-# AWS Architecture — Employee Management System
+# AWS Architecture:Employee Management System
 
 ## High-Level Architecture
 
