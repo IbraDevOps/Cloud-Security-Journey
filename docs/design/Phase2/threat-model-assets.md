@@ -1,4 +1,4 @@
-# Threat Model — Assets
+# Threat Model:Assets
 
 ## Data Assets
 
