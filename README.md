@@ -38,7 +38,7 @@ Phase 3:AWS Architecture
         
 Phase 4:Infrastructure Deployment
         
-Phase 5:IAM & Security Hardening
+Phase 5: Application Integration & Security Hardening
         
 Phase 6:Logging & Detection
         
